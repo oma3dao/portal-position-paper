@@ -11,12 +11,13 @@ Metaverse portals have the potential to be the next pivotal development in this 
 
 Railways, highways, and the Internet are built on widely accepted standards and a metaverse portal system needs to take the same approach.  Building good standards is not an easy task.  There are countless examples of standards that had interoperability issues initially (Bluetooth) or use cases with competing standards (the current electric vehicle charging infrastructure).  Luckily there exists a body of knowledge and processes that consortiums can use to avoid such issues.  OMA3 leverages these best practices.  
 
-OMA3 is a consortium of Web3 metaverse platforms, game developers, and infrastructure providers. The goal of OMA3 is to ensure virtual land, digital assets, ideas, and services are highly interoperable between platforms and user owned. OMA3 is open for any organization to join.  The OMA3 Portaling and Mapping Working Group (PMWG) is currently the most active group in OMA3.  Its scope is the development and maintenance of portaling and mapping specifications, and the PMWG’s portaling standard is the focus of this paper.  
+OMA3 is a consortium of Web3 metaverse platforms, game developers, and infrastructure providers. The goal of OMA3 is to ensure virtual land, digital assets, ideas, and services are highly interoperable between platforms and user owned. OMA3 is open for any organization to join.  The OMA3 Portaling and Mapping Working Group (PMWG) is currently the most active group in OMA3.  Its scope is the development and maintenance of portaling and mapping specifications, and the PMWG’s portaling standard is the focus of this paper. 
 
 The PMWG believes that portals have the potential to revolutionize the way we interact with the metaverse. Portals could make the metaverse more accessible, immersive, and engaging. They could also create new revenue streams for software developers.  However, there are still a number of challenges that need to be addressed before portals can be widely adopted. Although the portaling standard is far from complete, the PMWG is committed to addressing these challenges and making portals a reality. 
 
 The PMWG is currently focused on defining the technical requirements for portals.  It has completed a use case description and a preliminary threat model.  Future tasks include developing a portaling protocol, creating a portal registry, and educating the community to spur adoption.  The purpose of this paper is to educate the Web3 community on the potential of a metaverse-wide teleportation system and to solicit more input and contributions from interested parties as we move to the next steps of the standardization process.
-Executive Summary
+
+## Executive Summary
 
 In this position paper we delve into the transformative technology of 'portals' within the metaverse and how they promise to redefine our interaction with digital spaces. The OMA3 Portaling and Mapping Working Group (PMWG) takes center stage in this endeavor, focusing on the development and maintenance of portaling specifications.
 
@@ -32,7 +33,7 @@ We detail the current progress in the development of the portaling standard, out
 
 The concept of portal technology in virtual worlds has its roots in various forms of media, ranging from literature to video games. One of the early literary examples of portals in virtual worlds is Neal Stephenson's 1992 science fiction novel, "Snow Crash." The novel introduced the concept of the metaverse, a vast virtual reality space where users interact through avatars and travel between different environments using portals.
 
-![Figure 1](https://github.com/oma3dao/portaling-position-paper/blob/main/portal/oma3-portal.jpg)
+![Figure 1](https://github.com/oma3dao/portal-position-paper/blob/main/oma3-portal.jpg)
 
 In the realm of video games, the use of portals can be traced back to classic titles like "Doom" (1993) where teleporters were utilized as a mechanic to traverse the game's labyrinth-like levels. "Myst" (1993), with its iconic linking books, allowed players to travel between different ages or worlds, pioneering the concept of inter-world portaling. The "Ultima" series (1981-1999) was also known for its moongates, magical portals that provided instant transportation between different locations within the game world.
 
@@ -68,7 +69,7 @@ A use case consists of a sequence of actions that shows how actors and the syste
 
 These actors interact with each other to perform two different but related tasks- portal utilization and portal creation.
 
-![Figure 2](https://github.com/oma3dao/portaling-position-paper/blob/main/portal/portaling-actors.png)
+![Figure 2](https://github.com/oma3dao/portal-position-paper/blob/main/portaling-actors.png)
 
 ### Portal Utilization
 
