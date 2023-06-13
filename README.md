@@ -1,5 +1,7 @@
 # portaling-position-paper
 
+Please comment on the paper by [creating an issue](https://github.com/oma3dao/portal-position-paper/issues/new) or commenting in the [Google Doc](https://docs.google.com/document/d/13MW6ME6lwXBEnwXFShQPSHtjtGHSsXZBEZPjQkWqRAY/).  If you would like to contribute to this project, [join OMA3](https://www.oma3.org/join) and participate in the OMA3 Portaling and Mapping Working Group.
+
 Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
 
 This work is licensed under a
