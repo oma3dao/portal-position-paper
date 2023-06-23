@@ -54,18 +54,19 @@ UML use case descriptions are commonly used by consortiums as the first step in 
 A use case consists of a sequence of actions that shows how actors and the system collaborate to achieve a specific outcome or perform a certain task (in this case, two tasks). OMA3 has defined the following actors for the portal system use cases:
 
   * User- The User is an entity (most likely a human, but it could be machine-based) that operates in real life and operates one or more Avatars in one or more Metaverse Platforms.
+  * Asset- An avatar or an item, owned by the User or a Platform.
   * Avatar- A graphical representation of the User in a Platform.  If the Platform is a first-person Platform, the Avatar is the object the Platform uses to identify the User as an entity in the Platform world.
-  * Platform- The software that creates a virtual world that users can explore.
+  * Item- A thing belonging to the Avatar on the Originating Platform, which the Avatar may bring with it to the Destination Platform.
+  * Platform- The software that creates a virtual world that users can explore. All the Platforms available to a User defines the Metaverse.
   * Originating Platform- the Platform from which the Avatar starts.
   * Destination Platform- the Platform the Avatar goes to after the portaling process.
   * Destination Location- address of the location in the Destination Platform
-  * Metaverse- All the Platforms available to a User.
-  * Items- Things the Avatar may bring with it to the Destination Platform.
-  * Portal- A user interface element in a Platform that initiates the teleportation of an Avatar to a Destination Location in the Metaverse.
-  * Identity Service- software infrastructure separate from a Platform that allows a User to log in to a Platform, either manually or automatically.
-  * Platform Registry- an actor that stores all the Platforms that support the OMA3 portaling standard.
-  * Asset Transfer System- an actor that transfers assets (e.g.- Avatars and Items) between Platforms, and possibly the infrastructure these Platforms are built on (e.g.- blockchains).
-  * Inter-Platform Messaging System- an actor that sends messages between Platforms.
+  * Service- A software that refers to an action of helping or doing work for an individual platform or many platforms.
+  * Portal UI- A Service that provides a user interface element within a Platform that allows the initiation of the teleportation of an Asset to a Destination Location in the Metaverse.
+  * Identity Service- A Service that allows a User to log in to a Platform, either manually or automatically.
+  * Platform Registry- A Service that stores all the Platforms that support the OMA3 portaling standard.
+  * Asset Transfer System- A Service that transfers Assets (e.g.- Avatars and Items) between Platforms, and possibly the infrastructure these Platforms are built on (e.g.- blockchains).
+  * Inter-Platform Messaging System- A Service that sends messages between Platforms.
 
 These actors interact with each other to perform two different but related tasks- portal utilization and portal creation.
 
@@ -73,15 +74,16 @@ These actors interact with each other to perform two different but related tasks
 
 ### Portal Utilization
 
-  1. A User logs in to the Originating Platform and starts controlling the Avatar.
-  2. User uses a Portal to initiate teleportation to a Destination Location.  This use case assumes that the destination already is determined by the Portal.  The Portal can be a visual “door” in the Platform that the Avatar “walks through”.  It can be a UI toolbar that allows the User to enter a destination “address”.  It may or may not offer the User a dialog to confirm the intended destination.
+  1. A User uses the Identify Service to log into the Originating Platform and starts controlling the Avatar.
+  2. User uses a Portal UI to initiate the teleportation of an Avatar to a Destination Location.  This use case assumes that the destination already is determined by the Portal.  The Portal can be a visual “door” in the Platform that the Avatar “walks through”.  It can be a UI toolbar that allows the User to enter a destination “address”.  It may or may not offer the User a dialog to confirm the intended destination.
   3. Originating Platform triggers the portal system to initiate the teleportation.
-  4. Portal system launches the Destination Platform and notifies Destination Platform of incoming Avatar and Destination Location.
+  4. Portal system launches the Destination Platform and notifies the Destination Platform of the incoming Avatar and the Destination Location.
   5. Destination Platform gives portal system instructions.
   6. User uses Identity Service to log into the Destination Platform, possibly going through steps to register the User or possibly doing it automatically.
   7. Avatar appears in the Destination Platform (with the native representation in the Destination Platform) at the Destination Location specified by the Originating Platform Portal, or other location the Destination Platform specifies that overrides the Destination Location based on the Destination Platform rules.
-  8. Optional- Avatar can return to the Originating Platform using a Portal at the Destination Location (or overridden location) that has stored the location of the Originating Platform Portal.
-  9. Optional- Portal system may use an Asset Transfer System to transfer Avatar Items to the Destination Platform.  Such Avatar Items must be messaged to the System by the Originating Platform.
+  8. Optional- Portal system may use an Asset Transfer System to transfer Items to the Destination Platform.  Such Items must be messaged to the System by the Originating Platform.
+  9. Optional- Avatar can return to the Originating Platform using a Portal UI at the Destination Location (or overridden location) that has stored the location of the Originating Platform Portal UI.
+  10. 
 
 
 ### Portal Creation
@@ -116,12 +118,19 @@ We start with benefits and then review the challenges.
 4. Personalization and Creativity: Users can express their creativity and individuality by creating avatars, possessions, or environments that are adaptable to different metaverses.
 
 5. Access to Diverse Content: Users will be encouraged to access a wider range of content, experiences, and services because of the ease of portaling between metaverses.
+
 6. More Metaverse Customers: Businesses who are currently active in a limited number of platforms will see more customers as the portal system will make it easier for users to visit these platforms.
+
 7. Metaverse Expansion: Businesses can more easily justify a presence across many more platforms as the portal system allows them to create portals between their locations in all the platforms.  
+
 8. Data Collection and Analysis: With the appropriate permissions from users, businesses can use portals to collect and analyze data from multiple platforms, which could provide valuable insights into user behavior and preferences across different digital environments. 
+
 9. Links to the Physical World:  Platforms based in the real or physical world can set up portals to Platforms based in fantasy.  For example, a virtual world that augments a physical retail store (AR metaverse) can have a portal that goes to a fantasy virtual retail store, ultimately giving users more choice.
+
 10. Higher value of goods:  Items that can be brought from one metaverse to another through a portal will be valued more highly than items that are constrained to a single platform, especially as there’s always the risk of the platform going away or decreasing in popularity. 
+
 11. Metaverse synergies:  Portaling can be the start of further collaborations between metaverse platforms.  
+
 12. More businesses:  When businesses expand their presence to more platforms, this brings in more revenue to the metaverse as a whole.  It also makes the metaverse more attractive to users, feeding into a virtuous cycle of metaverse adoption.
 
 ## Portal Challenges
@@ -135,12 +144,19 @@ We start with benefits and then review the challenges.
 4. Interoperability Issues: Users might face limitations or barriers when moving between metaverses if the standard is not designed or implemented properly and there are interoperability issues between different digital environments.  The ultimate goal for the OMA3 portal system is true interoperability with avatars and items, and this is a challenging problem to solve.
 
 5. Complexity and Cost: Managing a business presence in multiple metaverses could be complex and costly. It may require significant resources, including time, money, and expertise, to understand and navigate the unique rules and structures of each metaverse.
+
 6. Data Security and Privacy: Portaling could raise concerns about data security and privacy. Businesses will need to ensure they comply with data protection regulations across different metaverses, which may vary widely.  Industry self-imposed requirements, either formal or informal, could be a solution here.
+
 7. Interoperability Issues: Not all metaverses may be compatible or interoperable, which could limit the effectiveness of portaling. OMA3 needs to play a large role in ensuring a clear standard and Platform compliance with the standard to address this challenge.
+
 8. User Churn:  Leaving one world through a portal is the equivalent of clicking off a website to go to another.  The originating world loses the revenue potential or engagement of the user to another.  The hope is that the portal system brings more users overall to the metaverse, and the rising tide lifts all boats.
+
 9. Platform Clash:  An influx of users from a world with completely different social norms from the destination world could be a disruption to long-time participants in the destination world.  
+
 10. Technical Complexity:  It is a significant engineering challenge to build a truly interoperable portal system that not only transports avatars and identities, but also reconciles the graphic rendering and game mechanics of such.  Addressing items that are carried by avatars through portals adds to the challenge.  Luckily OMA3 is not alone in trying to solve this.  Other organizations include Khronos Group, Metverse Standards Forum, and Open Metaverse Initiative.
+
 11. Adoption: Even if a universal standard is developed, getting all platforms to adopt and implement it can be a challenge. This requires extensive collaboration, negotiation, and consensus-building among different stakeholders.  
+
 12. Evolution: The metaverse and associated technologies are rapidly evolving. The standards must be flexible and adaptable to accommodate future technological advancements and changes in user behavior.  OMA3 must be nimble enough to meet this challenge.
 
 In addition to the above challenges, there exists a wide range of others that revolve around cybersecurity threats and error cases.  OMA3 is still in the process of identifying these challenges, but here are a few examples:
@@ -213,7 +229,8 @@ Gino Cingolani, Decentraland Foundation
 Stilyan Mitrev, Product Lead of EnterDAO   
 Marc McGinley, Animoca Brands  
 Lucas Shrewsbury, CTO of The Sandbox  
-Davud Saavedra, CEO Hash Trust
+David Saavedra, CEO Hash Trust
+Hrish Lotlikar, CEO, SuperWorld
 
 ## About OMA3
 [www.oma3.org](https://www.oma3.org)   
