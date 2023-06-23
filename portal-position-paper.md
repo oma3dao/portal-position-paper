@@ -82,9 +82,7 @@ These actors interact with each other to perform two different but related tasks
   6. User uses Identity Service to log into the Destination Platform, possibly going through steps to register the User or possibly doing it automatically.
   7. Avatar appears in the Destination Platform (with the native representation in the Destination Platform) at the Destination Location specified by the Originating Platform Portal, or other location the Destination Platform specifies that overrides the Destination Location based on the Destination Platform rules.
   8. Optional- Portal system may use an Asset Transfer System to transfer Items to the Destination Platform.  Such Items must be messaged to the System by the Originating Platform.
-  9. Optional- Avatar can return to the Originating Platform using a Portal UI at the Destination Location (or overridden location) that has stored the location of the Originating Platform Portal UI.
-  10. 
-
+  9. Optional- Avatar can return to the Originating Platform using a Portal UI at the Destination Location (or overridden location) that has stored the location of the Originating Platform Portal UI. 
 
 ### Portal Creation
 
