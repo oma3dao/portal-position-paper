@@ -84,6 +84,8 @@ These actors interact with each other to perform two different but related tasks
   8. Optional- Portal system may use an Asset Transfer System to transfer Items to the Destination Platform.  Such Items must be messaged to the System by the Originating Platform.
   9. Optional- Avatar can return to the Originating Platform using a Portal UI at the Destination Location (or overridden location) that has stored the location of the Originating Platform Portal UI. 
 
+![Figure 3](https://github.com/oma3dao/portal-position-paper/blob/main/portal-utilization-flow.png)
+
 ### Portal Creation
 
   1. Destination Platform registers itself with the Platform Registry, including a default Destination Location and persistence support (persistent and/or ephemeral Portals)
