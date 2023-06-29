@@ -45,13 +45,13 @@ Overall, the history of portal technology in virtual worlds spans several decade
 
 ## The OMA3 Portal System
 
-The OMA3 portal system is essentially an inter-world version of the intra-world teleporting systems described above.  In other words, OMA3’s portal system allows travel between different worlds, not just locations in the same world.  To be more specific, we have defined two portal system use cases using UML (Unified Modeling Language) to reduce confusion moving forward.
+The OMA3 portal system, tentatively named the Inter-World Portaling System (IWPS), is essentially an inter-world version of the intra-world teleporting systems described above.  In other words, OMA3’s portal system allows travel between different worlds, not just locations in the same world.  To be more specific, we have defined two portal system use cases using UML (Unified Modeling Language) to reduce confusion moving forward.
 
-UML use case descriptions are commonly used by consortiums as the first step in a standardization process.  Use cases describe the main goals and functions of a “system” (in this case, the OMA3 portal system) from the perspective of the external entities that interact with it. These entities are called “actors” and they can be humans or non-humans (e.g.- software applications or hardware).
+UML use case descriptions are commonly used by consortiums as the first step in a standardization process.  Use cases describe the main goals and functions of a “system” (in this case, IWPS) from the perspective of the external entities that interact with it. These entities are called “actors” and they can be humans or non-humans (e.g.- software applications or hardware).
 
 ### Portal Actors
 
-A use case consists of a sequence of actions that shows how actors and the system collaborate to achieve a specific outcome or perform a certain task (in this case, two tasks). OMA3 has defined the following actors for the portal system use cases:
+A use case consists of a sequence of actions that shows how actors and the system collaborate to achieve a specific outcome or perform a certain task (in this case, two tasks). OMA3 has defined the following actors for IWPS use cases:
 
   * User- The User is an entity (most likely a human, but it could be machine-based) that operates in real life and operates one or more Avatars in one or more Metaverse Platforms.
   * Asset- An avatar or an item, owned by the User or a Platform.
@@ -76,7 +76,7 @@ These actors interact with each other to perform two different but related tasks
 
   1. A User uses the Identify Service to log into the Originating Platform and starts controlling the Avatar.
   2. User uses a Portal UI to initiate the teleportation of an Avatar to a Destination Location.  This use case assumes that the destination already is determined by the Portal.  The Portal can be a visual “door” in the Platform that the Avatar “walks through”.  It can be a UI toolbar that allows the User to enter a destination “address”.  It may or may not offer the User a dialog to confirm the intended destination.
-  3. Originating Platform triggers the portal system to initiate the teleportation.
+  3. Originating Platform triggers IWPS to initiate the teleportation.
   4. Portal system launches the Destination Platform and notifies the Destination Platform of the incoming Avatar and the Destination Location.
   5. Destination Platform gives portal system instructions.
   6. User uses Identity Service to log into the Destination Platform, possibly going through steps to register the User or possibly doing it automatically.
@@ -109,7 +109,7 @@ Although we believe a universal metaverse portal system will be a net benefit to
 
 We start with benefits and then review the challenges.
 
-1. Variety and Exploration: Portaling allows users to more easily explore and experience a wide variety of digital environments. This can provide a sense of novelty, adventure, and limitless possibility.  We believe this is the primary benefit to the portal system.
+1. Variety and Exploration: Portaling allows users to more easily explore and experience a wide variety of digital environments. This can provide a sense of novelty, adventure, and limitless possibility.  We believe this is the primary benefit to IWPS.
 
 2. Social Interaction and Networking: Users can more easily meet and interact with people from different metaverses, potentially diversifying their social networks and opening up opportunities for collaboration or friendship. 
 
@@ -119,9 +119,9 @@ We start with benefits and then review the challenges.
 
 5. Access to Diverse Content: Users will be encouraged to access a wider range of content, experiences, and services because of the ease of portaling between metaverses.
 
-6. More Metaverse Customers: Businesses who are currently active in a limited number of platforms will see more customers as the portal system will make it easier for users to visit these platforms.
+6. More Metaverse Customers: Businesses who are currently active in a limited number of platforms will see more customers as IWPS will make it easier for users to visit these platforms.
 
-7. Metaverse Expansion: Businesses can more easily justify a presence across many more platforms as the portal system allows them to create portals between their locations in all the platforms.  
+7. Metaverse Expansion: Businesses can more easily justify a presence across many more platforms as IWPS allows them to create portals between their locations in all the platforms.  
 
 8. Data Collection and Analysis: With the appropriate permissions from users, businesses can use portals to collect and analyze data from multiple platforms, which could provide valuable insights into user behavior and preferences across different digital environments. 
 
@@ -137,7 +137,7 @@ We start with benefits and then review the challenges.
 
 1. Complexity and Learning Curve: It can be challenging for users to understand and navigate the unique rules and structures of different metaverses, especially for users new to virtual worlds. This could lead to a steep learning curve and a frustrating experience.  World designers must be careful to ensure users are prepared for portals before they can be used.  For example, perhaps users must reach a certain level before portals are available, as is the case with many MMORPGs that implement intra-world portals.
 
-2. Digital Divide: Portaling might exacerbate the digital divide, as some users may not have the skills or hardware needed to support multiple types of worlds, leaving the portal system to only those that can understand and afford it.  This is a problem for the metaverse as a whole, but it is exacerbated by portals.
+2. Digital Divide: Portaling might exacerbate the digital divide, as some users may not have the skills or hardware needed to support multiple types of worlds, leaving IWPS to only those that can understand and afford it.  This is a problem for the metaverse as a whole, but it is exacerbated by portals.
 
 3. Terms of Service Inconsistency: Currently different platforms have different terms of service, differing on user rights such as item ownership, world governance, etc.  These differences may catch users by surprise and frustrate them.  The PMWG must work hard to harmonize such terms as much as possible, and notify users appropriately when they diverge.
 
@@ -149,7 +149,7 @@ We start with benefits and then review the challenges.
 
 7. Interoperability Issues: Not all metaverses may be compatible or interoperable, which could limit the effectiveness of portaling. OMA3 needs to play a large role in ensuring a clear standard and Platform compliance with the standard to address this challenge.
 
-8. User Churn:  Leaving one world through a portal is the equivalent of clicking off a website to go to another.  The originating world loses the revenue potential or engagement of the user to another.  The hope is that the portal system brings more users overall to the metaverse, and the rising tide lifts all boats.
+8. User Churn:  Leaving one world through a portal is the equivalent of clicking off a website to go to another.  The originating world loses the revenue potential or engagement of the user to another.  The hope is that IWPS brings more users overall to the metaverse, and the rising tide lifts all boats.
 
 9. Platform Clash:  An influx of users from a world with completely different social norms from the destination world could be a disruption to long-time participants in the destination world.  
 
@@ -173,7 +173,7 @@ In addition to addressing the various challenges, threats, and error cases outli
 
 **Cross platform:**  Metaverse platforms are built on different technology stacks and a truly universal portal system needs to support all possibilities.  We need a platform-agnostic solution that allows seamless transition between metaverse worlds. The solution should support various technologies, including web-based APIs, SDKs, blockchain, hardware, and operating systems. It must cater to both 2D and 3D worlds and integrate with existing wallets and app stores
 
-**Flexible:**  Not only are platforms built on different stacks, they also have uniqueness of experience.  The system needs to honor platform sovereignty as much as possible without confusing users or sacrificing interoperability.  Metaverse platforms also have different levels of Web3 adoption.  Some put all mechanics and assets on-chain.  Others are mostly centralized with only a few assets minted as NFTs.  The portal system should be able to support as wide a range of Web3 adoption as possible.
+**Flexible:**  Not only are platforms built on different stacks, they also have uniqueness of experience.  The system needs to honor platform sovereignty as much as possible without confusing users or sacrificing interoperability.  Metaverse platforms also have different levels of Web3 adoption.  Some put all mechanics and assets on-chain.  Others are mostly centralized with only a few assets minted as NFTs.  IWPS should be able to support as wide a range of Web3 adoption as possible.
 
 **Performant:**  Performance is crucial, with metrics such as throughput, latency, and reliability being key considerations. Additionally, the system should account for potential user limitations, such as new users without an account or uses without the destination platform downloaded.  The solution should offer high uptime, DDoS protection, and censorship resistance, while also maintaining privacy and ensuring interoperability.
 
@@ -181,7 +181,7 @@ In addition to addressing the various challenges, threats, and error cases outli
 
 There are two main factors that determine the success of a standard.  The overwhelming factor is adoption, especially when there are competing systems.  Even if a standard has technical issues, it can recover if it has widespread industry support.  Bluetooth is a prime example.  Bluetooth initially had compatibility issues, but it had so much industry support that it was able to recover and become the defacto standard anyway.
 
-OMA3 was created by top Web3 metaverse companies and has grown since then to represent millions of active metaverse users.  OMA3 cannot force members to adopt its projects, but if just a fraction of OMA3’s membership adopts the portal system it will be well on its way to becoming the defacto standard in Web3.  Of course, the number of current active Web3 metaverse users is only a fraction of the number of Web2 metaverse users but OMA3 is actively working with other standards bodies such as Metaverse Standards Forum to ensure it gets input from the Web2 industry as well.
+OMA3 was created by top Web3 metaverse companies and has grown since then to represent millions of active metaverse users.  OMA3 cannot force members to adopt its projects, but if just a fraction of OMA3’s membership adopts IWPS it will be well on its way to becoming the defacto standard in Web3.  Of course, the number of current active Web3 metaverse users is only a fraction of the number of Web2 metaverse users but OMA3 is actively working with other standards bodies such as Metaverse Standards Forum to ensure it gets input from the Web2 industry as well.
 
 The second main factor for success is the quality of the project.  Is the specification accurate enough to ensure compatibility between different implementations?  Is there a program to ensure poor implementations don’t harm the system?  Is it secure?  Does it provide the anticipated benefits?  Is it easy to use?  OMA3 is modeled after organizations that have already provided the world with high quality standards that successfully answered these questions.  Some of these standards are household names:  WiFi, Bluetooth, USB, and more.  These organizations use very similar legal structures, governance models, and operational procedures to OMA3.  OMA3 is essentially a carbon copy of these successful industry alliances.
 
@@ -231,12 +231,25 @@ Marc McGinley, Animoca Brands
 Lucas Shrewsbury, CTO of The Sandbox  
 David Saavedra, CEO Hash Trust  
 Hrish Lotlikar, CEO, SuperWorld
-
-## About OMA3
-[www.oma3.org](https://www.oma3.org)   
-[@oma3dao](https://www.twitter.com/oma3dao)   
-[https://www.linkedin.com/company/oma3/](https://www.linkedin.com/company/oma3/)   
-
+ 
 ## Public Comments
 Create an issue on Github:  [https://github.com/oma3dao/public-documentation/](https://github.com/oma3dao/public-documentation/)   
 Comment in [Google Docs](https://docs.google.com/document/d/17Q7AR3undXAnepoACNXbmWhgrXrckxU5pTjJJnZ7bLM/)
+
+## Get Involved
+
+Become a member:
+[https://www.oma3.org/join](https://www.oma3.org/join)
+
+Joint the community:
+[@oma3dao](https://www.twitter.com/oma3dao)   
+[https://www.linkedin.com/company/oma3/](https://www.linkedin.com/company/oma3/)
+
+## Stay Connected
+
+Contact us:
+[info@oma3.org](info@oma3.org)
+
+Subscribe to our newsletter:
+[https://www.oma3.org/join-newsletter](https://www.oma3.org/join-newsletter)
+
