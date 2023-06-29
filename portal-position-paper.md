@@ -229,7 +229,7 @@ Gino Cingolani, Decentraland Foundation
 Stilyan Mitrev, Product Lead of EnterDAO   
 Marc McGinley, Animoca Brands  
 Lucas Shrewsbury, CTO of The Sandbox  
-David Saavedra, CEO Hash Trust
+David Saavedra, CEO Hash Trust  
 Hrish Lotlikar, CEO, SuperWorld
 
 ## About OMA3
