@@ -201,8 +201,8 @@ Step 4:  Solicit specification proposals from the membership.  This is vastly mo
 
 The PMWG portaling work is now at Step 3.  A few PMWG participants have even built prototypes that will be updated to meet the specifications voted on by PMWG:
 
-Space prototype utilizing IPSME relying on Industry of Integrations
-Made For Gamers prototype using portals to travel between Unity and Unreal worlds.
+[Space prototype](https://drive.google.com/file/d/1bY0TEDJBoKR4pAP6Rt4z8E27scSe5-oa/) utilizing IPSME relying on Industry of Integrations  
+[Made For Gamers prototype](https://www.youtube.com/watch?v=W7FXogTn2M8) using portals to travel between Unity and Unreal worlds.
 
 
 ## Call for Community Participation
