@@ -234,7 +234,7 @@ Hrish Lotlikar, CEO, SuperWorld
  
 ## Public Comments
 Create an issue on Github:  [https://github.com/oma3dao/public-documentation/](https://github.com/oma3dao/public-documentation/)   
-Comment in [Google Docs](https://docs.google.com/document/d/13MW6ME6lwXBEnwXFShQPSHtjtGHSsXZBEZPjQkWqRAY/edit)
+Comment in Google Docs: [https://docs.google.com/document/d/13MW6ME6lwXBEnwXFShQPSHtjtGHSsXZBEZPjQkWqRAY/](https://docs.google.com/document/d/13MW6ME6lwXBEnwXFShQPSHtjtGHSsXZBEZPjQkWqRAY/edit)
 
 ## Get Involved
 
