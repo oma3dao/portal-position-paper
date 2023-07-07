@@ -201,8 +201,8 @@ Step 4:  Solicit specification proposals from the membership.  This is vastly mo
 
 The PMWG portaling work is now at Step 3.  A few PMWG participants have even built prototypes that will be updated to meet the specifications voted on by PMWG:
 
-Space prototype utilizing IPSME relying on Industry of Integrations
-Made For Gamers prototype using portals to travel between Unity and Unreal worlds.
+[Space prototype](https://drive.google.com/file/d/1bY0TEDJBoKR4pAP6Rt4z8E27scSe5-oa/) utilizing IPSME relying on Industry of Integrations  
+[Made For Gamers prototype](https://www.youtube.com/watch?v=W7FXogTn2M8) using portals to travel between Unity and Unreal worlds.
 
 
 ## Call for Community Participation
@@ -234,7 +234,7 @@ Hrish Lotlikar, CEO, SuperWorld
  
 ## Public Comments
 Create an issue on Github:  [https://github.com/oma3dao/public-documentation/](https://github.com/oma3dao/public-documentation/)   
-Comment in [Google Docs](https://docs.google.com/document/d/17Q7AR3undXAnepoACNXbmWhgrXrckxU5pTjJJnZ7bLM/)
+Comment in Google Docs: [https://docs.google.com/document/d/13MW6ME6lwXBEnwXFShQPSHtjtGHSsXZBEZPjQkWqRAY/](https://docs.google.com/document/d/13MW6ME6lwXBEnwXFShQPSHtjtGHSsXZBEZPjQkWqRAY/edit)
 
 ## Get Involved
 
