@@ -64,9 +64,12 @@ A use case consists of a sequence of actions that shows how actors and the syste
   * Service- A software that refers to an action of helping or doing work for an individual platform or many platforms.
   * Portal UI- A Service that provides a user interface element within a Platform that allows the initiation of the teleportation of an Asset to a Destination Location in the Metaverse.
   * Identity Service- A Service that allows a User to log in to a Platform, either manually or automatically.
+  * Payment Service- A Service that allows a User to make payments to another Service, a Platform, or IWPS.
   * Platform Registry- A Service that stores all the Platforms that support the OMA3 portaling standard.
   * Asset Transfer System- A Service that transfers Assets (e.g.- Avatars and Items) between Platforms, and possibly the infrastructure these Platforms are built on (e.g.- blockchains).
   * Inter-Platform Messaging System- A Service that sends messages between Platforms.
+  * Search Engine- A Service that allows Actors to list or discover Platforms in the Platform Registry.
+  * Data Collector- A Service that collects data (such as portal transactions).
 
 These actors interact with each other to perform two different but related tasks- portal utilization and portal creation.
 
@@ -75,14 +78,16 @@ These actors interact with each other to perform two different but related tasks
 ### Portal Utilization
 
   1. A User uses the Identify Service to log into the Originating Platform and starts controlling the Avatar.
-  2. User uses a Portal UI to initiate the teleportation of an Avatar to a Destination Location.  This use case assumes that the destination already is determined by the Portal.  The Portal can be a visual “door” in the Platform that the Avatar “walks through”.  It can be a UI toolbar that allows the User to enter a destination “address”.  It may or may not offer the User a dialog to confirm the intended destination.
-  3. Originating Platform triggers IWPS to initiate the teleportation.
-  4. Portal system launches the Destination Platform and notifies the Destination Platform of the incoming Avatar and the Destination Location.
-  5. Destination Platform gives portal system instructions.
-  6. User uses Identity Service to log into the Destination Platform, possibly going through steps to register the User or possibly doing it automatically.
-  7. Avatar appears in the Destination Platform (with the native representation in the Destination Platform) at the Destination Location specified by the Originating Platform Portal, or other location the Destination Platform specifies that overrides the Destination Location based on the Destination Platform rules.
-  8. Optional- Portal system may use an Asset Transfer System to transfer Items to the Destination Platform.  Such Items must be messaged to the System by the Originating Platform.
-  9. Optional- Avatar can return to the Originating Platform using a Portal UI at the Destination Location (or overridden location) that has stored the location of the Originating Platform Portal UI. 
+  2. Optional- Data Collector gets permission from User to collect data.
+  3. User uses a Portal UI to initiate the teleportation of an Avatar to a Destination Location.  This use case assumes that the destination already is determined by the Portal.  The Portal can be a visual “door” in the Platform that the Avatar “walks through”.  It can be a UI toolbar that allows the User to enter a destination “address”.  It may or may not offer the User a dialog to confirm the intended destination.
+  4. Optional- User may be presented with a payment dialog, either to enter payment information or confirm a payment using the Payment Service.
+  5. Originating Platform triggers IWPS to initiate the teleportation.
+  6. Portal system launches the Destination Platform and notifies the Destination Platform of the incoming Avatar and the Destination Location.
+  7. Destination Platform gives portal system instructions.
+  8. User uses Identity Service to log into the Destination Platform, possibly going through steps to register the User or possibly doing it automatically.
+  9. Avatar appears in the Destination Platform (with the native representation in the Destination Platform) at the Destination Location specified by the Originating Platform Portal, or other location the Destination Platform specifies that overrides the Destination Location based on the Destination Platform rules.
+  10. Optional- Portal system may use an Asset Transfer System to transfer Items to the Destination Platform.  Such Items must be messaged to the System by the Originating Platform.
+  11. Optional- Avatar can return to the Originating Platform using a Portal UI at the Destination Location (or overridden location) that has stored the location of the Originating Platform Portal UI. 
 
 ![Figure 3](https://github.com/oma3dao/portal-position-paper/blob/main/portal-utilization-flow.png)
 
@@ -90,11 +95,13 @@ These actors interact with each other to perform two different but related tasks
 
   1. Destination Platform registers itself with the Platform Registry, including a default Destination Location and persistence support (persistent and/or ephemeral Portals)
   2. Optional- Platform Registry may require Destination Platform to pass an interoperability test in order to be registered.
-  3. Originating Platform queries Platform Registry for a list of Destination Platforms.
-  4. User or Originating Platform (depending on Originating Platform implementation choices) chooses Destination Platform (and optionally Destination Location) and creates the Portal.
-  5. Optional- User or Originating Platform (depending on Originating Platform implementation) records the desired Destination Location in the Portal.
-  6. User or Originating Platform decides if the Portal is persistent, depending on Originating Platform implementation.
-  7. Optional- Originating Platform sends message to Destination Platform using the Inter-Platform Messaging System to set up a return destination Portal with the proper parameters for returning an Avatar from the Destination Platform back to the Originating Platform.
+  3. Originating Platform queries Platform Registry for a list of Destination Platforms, optionally using the Search Engine.
+  4. Optional- Data Collector gets permission from User or Platform to collect data.
+  5. User or Originating Platform (depending on Originating Platform implementation choices) chooses Destination Platform (and optionally Destination Location) and creates the Portal.
+  6. Optional- User may be presented with a payment dialog, either to enter payment information or confirm a payment using the Payment Service.
+  7. Optional- User or Originating Platform (depending on Originating Platform implementation) records the desired Destination Location in the Portal.
+  8. User or Originating Platform decides if the Portal is persistent, depending on Originating Platform implementation.
+  9. Optional- Originating Platform sends message to Destination Platform using the Inter-Platform Messaging System to set up a return destination Portal with the proper parameters for returning an Avatar from the Destination Platform back to the Originating Platform.
 
 
 ## Portal Benefits
@@ -219,8 +226,8 @@ Judy Chen, Growth Wivity
 Paul-David Oosthuizen, CEO of Made For Gamers  
 Idan Zuckerman, Co-CEO of Upland  
 Nate Peace, Director at Unstoppable Domains  
-Riccardo Sibani, CPO Allice Foundation  
-Joel Dietz, CEO Metametaverse  
+Riccardo Sibani, CPO Alice Foundation  
+Joel Dietz, CEO MultiversalME  
 Somnath Banerjee, CTO of MetaJuice  
 Tokuro Uhara, CEO Crosstech  
 Anthony Knode, CFO Crosstech  
@@ -229,8 +236,9 @@ Gino Cingolani, Decentraland Foundation
 Stilyan Mitrev, Product Lead of EnterDAO   
 Marc McGinley, Animoca Brands  
 Lucas Shrewsbury, CTO of The Sandbox  
-David Saavedra, CEO Hash Trust  
-Hrish Lotlikar, CEO, SuperWorld
+David Saavedra, CEO of Hash Trust  
+Hrish Lotlikar, CEO of SuperWorld
+Anis Chohan, CTO of Virtua
  
 ## Public Comments
 Create an issue on Github:  [https://github.com/oma3dao/public-documentation/](https://github.com/oma3dao/public-documentation/)   
