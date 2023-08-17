@@ -1,4 +1,4 @@
-# Portals Unleashed:  Creating a teleportation standard to connect the metaverse
+# Portals Unleashed:  Introducing the Inter World Portaling System, the Hyperlink for the metaverse
 
 ## Introduction
 In the realm of the metaverse, the concept of 'portals' is emerging as a transformative technology set to revolutionize the way we interact with digital spaces. Similar to how the advent of high-speed transportation networks during the industrial revolution connected commercial centers, or how the HTTP standard facilitated the linking of information silos, portals in the metaverse promise to create a new era of connectivity, accessibility, and productivity.
@@ -65,10 +65,9 @@ A use case consists of a sequence of actions that shows how actors and the syste
   * Portal UI- A Service that provides a user interface element within a Platform that allows the initiation of the teleportation of an Asset to a Destination Location in the Metaverse.
   * Identity Service- A Service that allows a User to log in to a Platform, either manually or automatically.
   * Payment Service- A Service that allows a User to make payments to another Service, a Platform, or IWPS.
-  * Platform Registry- A Service that stores all the Platforms that support the OMA3 portaling standard.
   * Asset Transfer System- A Service that transfers Assets (e.g.- Avatars and Items) between Platforms, and possibly the infrastructure these Platforms are built on (e.g.- blockchains).
   * Inter-Platform Messaging System- A Service that sends messages between Platforms.
-  * Search Engine- A Service that allows Actors to list or discover Platforms in the Platform Registry.
+  * Search Engine- A Service that allows Actors to list or discover Platforms in the System.
   * Data Collector- A Service that collects data (such as portal transactions).
 
 These actors interact with each other to perform two different but related tasks- portal utilization and portal creation.
@@ -93,9 +92,9 @@ These actors interact with each other to perform two different but related tasks
 
 ### Portal Creation
 
-  1. Destination Platform registers itself with the Platform Registry, including a default Destination Location and persistence support (persistent and/or ephemeral Portals)
-  2. Optional- Platform Registry may require Destination Platform to pass an interoperability test in order to be registered.
-  3. Originating Platform queries Platform Registry for a list of Destination Platforms, optionally using the Search Engine.
+  1. Destination Platform registers itself with the System, including a default Destination Location and persistence support (persistent and/or ephemeral Portals)
+  2. Optional- System may require Destination Platform to pass an interoperability test in order to be registered.
+  3. Originating Platform queries System for a list of Destination Platforms, optionally using the Search Engine.
   4. Optional- Data Collector gets permission from User or Platform to collect data.
   5. User or Originating Platform (depending on Originating Platform implementation choices) chooses Destination Platform (and optionally Destination Location) and creates the Portal.
   6. Optional- User may be presented with a payment dialog, either to enter payment information or confirm a payment using the Payment Service.
