@@ -102,6 +102,7 @@ These actors interact with each other to perform two different but related tasks
   8. User or Originating Platform decides if the Portal is persistent, depending on Originating Platform implementation.
   9. Optional- Originating Platform sends message to Destination Platform using the Inter-Platform Messaging System to set up a return destination Portal with the proper parameters for returning an Avatar from the Destination Platform back to the Originating Platform.
 
+![Figure 4](https://github.com/oma3dao/portal-position-paper/blob/main/portal-creation-flow.png)
 
 ## Portal Benefits
 
